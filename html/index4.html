@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Forms are used to collect data from the user <form>-->
+    <!--Forms are used to collect data from the user <form>-->
+    <!--<form action="/action.php",we will use backend later,action is an attribute-->
+    <!--form elemnt input:<input type="text" placeholder="Enter Name"-->
+    <form action="/action.php">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password"><br><br>
+        <!--label,radio buttons value can only be selected once,backend will get to know which class has been selected-->
+        <input type="button" value="class IX" name="class" id="1"> <!--only outside value here is visible to user-->
+        <input type="checkbox" value="class X" name="class" id="2">class X<br> <!--inside is code-->
+        <!--if we use label button will be selected even if text is selected-->
+        <label for="101"><input type="radio" value="class XI" name="class" id="101">class XI</label>
+        <label for="202"><input type="radio" value="class XII" name="class" id="202">class XII</label>
+  
+    <!--checkbox is used for multiple selections , radio is single-->
+    <!--id is used for backend application-->
+    <!--class and id is used when we want to change every input-->
+    <div id="id1" class="group1"></div>
+    <div id="id1" class="group1"></div>
+    <!--for text user input-->
+   <textarea name="feedback" id="feedback" placeholder="type your feedback">feedback</textarea><br><hr>
+
+   <textarea name="feedback" id="feedback2" placeholder="type your feedback" rows="10" cols="100"></textarea><hr>
+
+   <!--dropdown-->
+   <select name="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Pune">Pune</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Mumbai">Mumbai</option>
+   </select><hr>
+
+     <input type="submit" value="submit">
+    </form><hr>
+
+</body>
+</html>
