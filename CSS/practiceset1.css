@@ -1,0 +1,14 @@
+#box{
+    background-color: blue;
+    color: white;
+    /* comments in css ctrl+/ */
+}
+.heading{
+    color: red;
+}
+h1, h2, h3{
+   color: blueviolet;
+}
+button{
+    background-color: green;
+}
