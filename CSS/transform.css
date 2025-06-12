@@ -1,0 +1,40 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid red;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* transform: rotate(45deg); */
+
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+    transition: all 1s ease-in 0.2s;
+    
+}
+
+#outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(180deg); */
+    height: 300px;
+    width: 300px;
+}
+
+div:hover{
+    background-color: black;
+    /* transform: scale(2,3);
+    transform: rotate(180deg); */
+    /* transform: translateX(100px);
+    transform: translateY(-20px); */
+    transform: translate(-100px,-100px);
+
+    transform: skew(90deg);
+}

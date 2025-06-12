@@ -1,0 +1,29 @@
+.navbar{
+    background-color:lemonchiffon;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+#outer{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;/*  to center along x axis(main axis)*/
+    align-items: center; /* to center along y axis(cross axis) */
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+}
