@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formvalid.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <div>* means required quantity</div>
+        <div>
+            <label>
+            Email
+            </label><br>
+            <input type="email" name="email" id="email" required placeholder="*">
+        </div><br>
+            <div>
+            <label>
+            password
+            </label><br>
+            <input type="password" name="password" id="password" required placeholder="*">
+        </div><br>
+        <div>
+            <textarea placeholder="whats on your mind " minlength="3" maxlength="1000" style="height: 100px; width: 200px;"></textarea>
+        </div>
+        <div>
+            <label>
+                quantity
+            </label>
+            <input type="number" id="quantity" name="quantity" min="1" value="0">
+        </div>
+        <div>
+            <label>
+                quantity
+            </label>
+            <input type="number" id="quantity" name="quantity" max="10" value="0">
+        </div>
+        <button type="submit">Submit/Login</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.container{
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px/40px 40px 40px 40px 40px;
+    background-color: gainsboro;
+}
+
+.room{
+    border: 1px solid black;
+    font-size: 50%;
+    text-align: center; 
+}
+
+#living-room{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#kitchen{
+   grid-area: 1/4/3/6; /* row-start/column-start/row-end/column-end */
+}
+
+#bedroom{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#bathroom{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+#closet{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}

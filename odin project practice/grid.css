@@ -1,0 +1,20 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 75px 75px;
+    gap: 10px;
+}
+
+.card{
+    background-color: greenyellow;
+    border: 2px solid black;
+}
+/* 
+.container {
+  display: grid;
+  grid-template: 50px 50px / 50px 50px 50px;
+} 
+  shorthand for the same 
+  row-gap
+  column-gap
+  gap*/

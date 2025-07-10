@@ -1,0 +1,151 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #e2e8f0;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: skyblue;
+      color: black;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: black;
+    }
+
+    .sidebar a:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .topbar input {
+      flex: 1;
+      max-width: 400px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-right: 20px;
+    }
+
+    .topbar .buttons button {
+      background-color: skyblue;
+      color: black;
+      border: none;
+      padding: 8px 16px;
+      margin: 0 5px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover{
+        background-color: #0056b3;
+        color: white;
+    }
+
+    .welcome {
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(66, 0, 248, 0.1);
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 5px;
+      height: 100%;
+      background-color: #0056b3;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .card h4 {
+      margin-bottom: 8px;
+    }
+
+    .card .icons {
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .rightbar {
+      width: 250px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section {
+      background-color: skyblue;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h4 {
+      margin-bottom: 10px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
