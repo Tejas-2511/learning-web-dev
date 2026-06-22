@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Practice</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+
+    <p class="para">Paragraph 1</p>
+    <p class="para">Paragraph 2</p>
+
+    <div id="box" class="box">
+        Welcome to DOM
+    </div>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        // Selecting Elements
+        let heading = document.getElementById("heading");
+        let paras = document.getElementsByClassName("para");
+        let firstPara = document.querySelector(".para");
+        let allParas = document.querySelectorAll(".para");
+
+        console.log(heading);
+        console.log(paras);
+        console.log(firstPara);
+        console.log(allParas);
+
+        // Text Manipulation
+        console.log(heading.innerText);
+        console.log(heading.textContent);
+        console.log(heading.innerHTML);
+
+        heading.innerText = "DOM Tutorial";
+
+        // Attributes
+        heading.setAttribute("title", "This is a heading");
+        console.log(heading.getAttribute("title"));
+
+        // Styling
+        heading.style.color = "red";
+        heading.style.fontSize = "40px";
+
+        // Create Element
+        let newBtn = document.createElement("button");
+        newBtn.innerText = "New Button";
+
+        // Insert Element
+        document.body.append(newBtn);
+
+        // Traversing
+        let box = document.querySelector("#box");
+
+        console.log(box.parentElement);
+        console.log(box.children);
+        console.log(box.firstElementChild);
+        console.log(box.lastElementChild);
+
+        // Class Manipulation
+        box.classList.add("dark");
+
+        // Events
+        let btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+
+            // Toggle Class
+            box.classList.toggle("dark");
+
+            // Change Text
+            box.innerText = "Button Clicked";
+
+            // Create Paragraph
+            let p = document.createElement("p");
+            p.innerText = "New Paragraph Added";
+
+            document.body.append(p);
+
+            console.log("Button Clicked");
+        });
+
+        // Keyboard Event
+        document.addEventListener("keydown", (e) => {
+            console.log("Key Pressed:", e.key);
+        });
+
+    </script>
+
+</body>
+</html>

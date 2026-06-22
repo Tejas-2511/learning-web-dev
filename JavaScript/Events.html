@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2 id="heading">Events Demo</h2>
+
+    <input type="text" id="name" placeholder="Type something">
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        let heading = document.querySelector("#heading");
+        let input = document.querySelector("#name");
+        let btn = document.querySelector("#btn");
+
+        // CLICK EVENT
+        btn.addEventListener("click", (e) => {
+            console.log("Button Clicked");
+            console.log("Event Type:", e.type);
+            console.log("Target:", e.target);
+            heading.innerText = "Button Was Clicked";
+        });
+
+        // DOUBLE CLICK EVENT
+        btn.addEventListener("dblclick", () => {
+            console.log("Double Clicked");
+        });
+
+        // MOUSE OVER EVENT
+        btn.addEventListener("mouseover", () => {
+            console.log("Mouse Entered Button");
+        });
+
+        // KEYDOWN EVENT
+        document.addEventListener("keydown", (e) => {
+            console.log("Key Pressed:", e.key);
+        });
+
+        // INPUT EVENT
+        input.addEventListener("input", (e) => {
+            console.log("Current Value:", e.target.value);
+        });
+
+        // CHANGE EVENT
+        input.addEventListener("change", (e) => {
+            console.log("Final Value:", e.target.value);
+        });
+
+    </script>
+
+</body>
+</html>
